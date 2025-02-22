@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# product
+--------------------------------------------------------------*/
+
+.product-thumbnail-slider, .product-details-slider{
+    .swiper-slide{
+        img{
+            width: 100%;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: var(--color-primary);
+        &::after{
+            font-size: 1.75rem;
+        }
+    }
+}
+.product-cta{
+    .product-quantity {
+        max-width: 150px;
+    }
+}

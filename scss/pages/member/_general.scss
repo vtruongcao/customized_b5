@@ -1,0 +1,116 @@
+@media (min-width: 1200px) {
+    body.member-page{
+        .navbar {
+            a,
+            a:focus {
+                color: var(--member-nav-color);
+            }
+            li:hover > a {
+                color: var(--member-nav-color);
+            }
+        }
+    }
+}
+
+body.member-page{
+    .breadcrumbs {
+        &::before {
+            opacity: 0;
+        }
+        h2 {
+            color: var(--member-nav-color);
+        }
+        ol {
+            a {
+                color: var(--member-nav-color);
+            }
+            li + li {
+                &::before {
+                    color: var(--member-nav-color);
+                }
+            }
+        }
+    }
+    
+    .header {
+        .logo {
+            h1 {
+                color: var(--member-nav-color);
+            }
+        }
+    }
+    .child-p-0{
+        *{
+            padding: 0;
+        }
+    }
+    .child-border-0{
+        *{
+            border: 0;
+        }
+    }
+}
+a.message-item{
+    color: var(--color-secondary);
+}
+a.message-item.unread{
+    font-weight: 600;
+}
+
+.sidebar {
+    .recent-posts {
+        .sidebar-title {
+            font-size: 1.5rem;
+        }
+        .post-item {
+            display: flex;
+    
+            & + .post-item {
+                margin-top: 15px;
+            }
+        }
+    
+        img {
+            max-width: 80px;
+            margin-right: 15px;
+        }
+    
+        h4 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 0;
+    
+            a {
+                color: var(--color-secondary);
+                transition: 0.3s;
+    
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+
+        time {
+            display: block;
+            font-style: italic;
+            font-size: 14px;
+            color: rgba(54, 77, 89, 0.4);
+        }
+    }
+    .sb-categories {
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h6{
+                font-weight: 400;
+            }
+        }
+    }
+}
+.theme-card.member-dashboard{
+    padding: 1rem;
+    @include sm {
+        padding: 30px;
+    }
+}

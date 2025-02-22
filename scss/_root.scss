@@ -1,0 +1,317 @@
+
+/* Fonts */
+
+/* Open Sans Font */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/OpenSans-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+}
+
+/* Work Sans Font */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/WorkSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/WorkSans-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/WorkSans-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/WorkSans-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/WorkSans-BoldItalic.ttf") format("truetype");
+}
+
+/* Roboto Font */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Roboto-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Roboto-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+}
+
+
+:root {
+  --font-default: #{$font-default};
+  --font-primary: #{$font-primary};
+  --font-secondary: #{$font-secondary};
+}
+
+  /* Colors */
+:root {
+  --color-default: #{$color-default};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-warning: #{$color-warning};
+  --member-nav-color: #{$nav-color};
+  --color-dark: #{$color-dark};
+}
+
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+.btn{
+  --bs-btn-border-radius: #{$btn-border-radius};
+}
+.space-seperator.s-1 {
+  height: 1rem;
+}
+.space-seperator.s-md-1 {
+  @include md {
+    height: 1rem;
+  }
+}
+.space-seperator.s-lg-1 {
+  @include lg {
+    height: 1rem;
+  }
+}
+.space-seperator.s-2 {
+  height: 2rem;
+}
+.space-seperator.s-md-2 {
+  @include md {
+    height: 2rem;
+  }
+}
+.space-seperator.s-lg-2 {
+  @include lg {
+    height: 2rem;
+  }
+}
+.space-seperator.s-3 {
+  height: 3rem;
+}
+.space-seperator.s-md-3 {
+  @include md {
+    height: 3rem;
+  }
+}
+.space-seperator.s-lg-3 {
+  @include lg {
+    height: 3rem;
+  }
+}
+.space-seperator.s-4 {
+  height: 4rem;
+}
+.space-seperator.s-md-4 {
+  @include md {
+    height: 4rem;
+  }
+}
+.space-seperator.s-lg-4 {
+  @include lg {
+    height: 4rem;
+  }
+}
+.space-seperator.s-5 {
+  height: 5rem;
+}
+.space-seperator.s-md-5{
+  @include md {
+    height: 5rem;
+  }
+}
+.space-seperator.s-lg-5 {
+  @include lg {
+    height: 5rem;
+  }
+}
+iframe[id$="-nvframe"] {
+  visibility: hidden!important;
+  opacity: 0!important;
+  display: none!important;
+}
+body.manual-page{
+  margin-top: 0!important;
+}

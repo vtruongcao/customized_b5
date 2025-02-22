@@ -1,0 +1,56 @@
+
+$theme-color     :          #15ac31;
+$nav-color     :          #3c3c3c;
+$btn-border-radius : 0;
+
+/* Fonts */
+$font-default  :          "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-primary  :          "Roboto", sans-serif;
+$font-secondary  :          "Work Sans", sans-serif;
+$font-third  :          "Poppins", sans-serif;
+
+/* Colors */
+$color-default  :          #364d59;
+$color-primary  :          $theme-color;
+$color-secondary  :          #52565e;
+$color-warning  :          #ffc107;
+$color-dark  :          #212529;
+
+/* Breakpoints */
+// Extra small
+$screen-xs-min: 0px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Extra extra large tablets and desktops
+$screen-xxl-min: 1400px;
+
+
+/* --------------------------------------------------------------------------------------
+  *  Manual page variables
+-----------------------------------------------------------------------------------------*/
+$header-height: 57px!default;
+$sub-header-height: 57px!default;
+
+/* --------------------------------------------------------------------------------------
+  *  Bootstrap Variables
+-----------------------------------------------------------------------------------------*/
+$prefix: 'c5-';
+$white: #fff;
+$primary: $theme-color;
+
+
+/* --------------------------------------------------------------------------------------
+  *  Bootstrap Icons Variables
+-----------------------------------------------------------------------------------------*/
+$bootstrap-icons-font-dir: "./fonts";

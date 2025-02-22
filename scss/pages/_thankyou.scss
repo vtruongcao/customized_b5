@@ -1,0 +1,137 @@
+.thank-you {
+  width: 100%;
+  position: relative;
+  .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  p {
+    color: color-mix(in srgb, var(--color-secondary), transparent 30%);
+    margin: 5px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .thanks-heading {
+    margin-bottom: 3rem;
+  }
+
+  .btn-get-started {
+    color: var(--color);
+    background: var(--color-primary);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 12px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--contrast-color);
+      background: color-mix(in srgb, var(--color-primary), transparent 15%);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    .btn-get-started {
+      font-size: 13px;
+    }
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.services-4 {
+  .service-item {
+    position: relative;
+    padding-top: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: color-mix(in srgb, var(--color-secondary), transparent 90%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--color-primary);
+      border-right: 5px solid $white;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      position: relative;
+      margin-right: 50px;
+      line-height: 0;
+      i {
+        color: color-mix(in srgb, var(--color-secondary), transparent 30%);
+        font-size: 56px;
+        transition: ease-in-out 0.3s;
+        z-index: 2;
+        position: relative;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        background: color-mix(in srgb, var(--color-primary), transparent 70%);
+        border-radius: 50px;
+        z-index: 1;
+        bottom: -15px;
+        right: -15px;
+        transition: 0.3s;
+      }
+    }
+    .title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+      a {
+        color: var(--color-secondary);
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+    .description {
+      line-height: 24px;
+      font-size: 14px;
+    } 
+  }
+}

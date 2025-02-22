@@ -1,0 +1,166 @@
+/**
+ * --------------------------------
+ * Member Dashboard
+ * --------------------------------
+ */
+body.member-page{
+    .dashboard{
+        .profile-info{
+            td{
+                padding: 0;
+            }
+            td{
+                &:first-child{
+                    font-weight: 500;
+                    color: #bbb;
+                }
+            }
+        }
+        .questions-info{
+            td{
+                padding-left: 0;
+            }
+        }
+        .card-title{
+            position: relative;
+            a{
+                @include sm {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+        .resume {
+            .resume-wrapper {
+                .resume-block {
+                    margin-bottom: 3rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: 0.8rem;
+                        font-weight: 700;
+                        span {
+                            color: var(--color-primary);
+                        }
+                    }
+                    .lead {
+                        color: color-mix(in srgb, var(--color-secondary), transparent 25%);
+                        margin-bottom: 3rem;
+                    }
+                }
+                .timeline {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 30%;
+                        top: 0;
+                        height: 100%;
+                        width: 2px;
+                        background-color: color-mix(in srgb, var(--color-primary), transparent 85%);
+                    }
+                    .timeline-item {
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 1rem;
+                        position: relative;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .timeline-left {
+                            width: 30%;
+                            padding-right: 1.5rem;
+                            .company {
+                                color: var(--color-secondary);
+                                font-weight: 600;
+                                font-size: 1.1rem;
+                                margin-bottom: 0.25rem;
+                            }
+                            .period {
+                                // color: var(--color-primary);
+                                font-size: 0.9rem;
+                            }
+                        }
+                        .timeline-dot {
+                            position: absolute;
+                            left: calc(30% + 1px);
+                            transform: translateX(-50%);
+                            width: 1rem;
+                            height: 1rem;
+                            background-color: var(--color-primary);
+                            border-radius: 50%;
+                        }
+                        .timeline-right {
+                            width: 60%;
+                            padding-left: 1.5rem;
+                            margin-top: -4px;
+                            .position {
+                                color: var(--color-secondary);
+                                font-size: 1.2rem;
+                                margin-bottom: 0.6rem;
+                                font-weight: 600;
+                            }
+                            .description {
+                                color: color-mix(in srgb, var(--color-secondary), transparent 25%);
+                            }
+                            ul {
+                                padding-left: 15px;
+                                li {
+                                    padding-bottom: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .db-title{
+            min-width: 200px;
+        }
+        .db-date{
+            min-width: 100px;
+        }
+        .db-latest-reply{
+            min-width: 120px;
+        }
+        @media (max-width: 992px) {
+            .resume {
+                .resume-wrapper {
+                    .resume-block {
+                        h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                    .timeline {
+                        &::before {
+                            left: 1rem;
+                        }
+                        .timeline-item {
+                            flex-direction: column;
+                            margin-bottom: 20px;
+                            .timeline-left {
+                                width: 100%;
+                                text-align: left;
+                                padding-right: 0;
+                                padding-left: 2.5rem;
+                                margin-bottom: .5rem;
+                                margin-top: -4px;
+                            }
+                            .timeline-dot {
+                                left: calc(1rem + 1px);
+                            }
+                            .timeline-right {
+                                width: 100%;
+                                padding-left: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

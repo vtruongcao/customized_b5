@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+# Questions
+--------------------------------------------------------------*/
+body.member-page {
+    .threads {
+        .thread-search{
+            max-width: 300px;
+        }
+        .thread-list{
+            font-size: .875rem;
+            @include md {
+                padding: 0 1rem 0 1rem;
+                font-size: 1rem;
+            }
+            .thread-item {
+                .author-avatar {
+                    max-width: 45px;
+                }
+                .thead-info {
+                    font-size: 14px;
+                }
+                .question-title{
+                    color: var(--color-secondary);
+                    font-size: 1rem;
+                    @include md {
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        color: var(--color-primary);
+                    }
+                }
+            }
+            .q-avatar{
+                min-width: 60px;
+            }
+            .q-title{
+                min-width: 200px;
+                @include md {
+                    min-width: 400px;
+                }
+            }
+            .q-views{
+                min-width: 100px;
+                @include md {
+                    min-width: 120px;
+                }
+            }
+            .q-latest-reply{
+                min-width: 130px;
+                @include md {
+                    min-width: 150px;
+                }
+            }
+        }
+        .threads-pagination {
+            .page-item {
+                &:last-child {
+                    .page-link {
+                        border-radius: 0;
+                    }
+                }
+                &:first-child {
+                    .page-link {
+                        border-radius: 0;
+                    }
+                }
+                .page-link {
+                    color: var(--color-secondary);
+                }
+                .page-link.page-span{
+                    color: var(--color-secondary);
+                }
+            }
+            .active > .page-link, 
+            .page-link.active {
+                background-color: var(--color-primary);
+                border-color: var(--color-primary);
+                color: #fff;
+            }
+        }
+        .filter-bar{
+            border-bottom: 1px solid #e9ecef;
+            .btn-filter{
+                color: var(--color-secondary);
+                text-decoration: none;
+                margin-top: .125rem;
+            }
+            .dropdown-menu{
+                padding: .5rem;
+                max-width: 400px;
+                border-radius: 0;
+                .form-control, .form-select{
+                    border-radius: 0;
+                    font-size: .875rem;
+                }
+                label{
+                    font-size: .875rem;
+                }
+            }
+            .thread-filter-submit{
+                border-top: 1px solid #e9ecef;
+                padding-top: .5rem;
+                text-align: right;
+                button{
+                    background-color: var(--color-primary);
+                    border-color: var(--color-primary);
+                    border-radius: 0;
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+}

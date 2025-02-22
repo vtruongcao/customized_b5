@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Question Details
+--------------------------------------------------------------*/
+body.member-page{
+    .question-details{
+        .question-header{
+            .question-details-meta-item{
+                margin-right: 1rem;
+            }
+        }
+        .question-details-card{
+            .comment-by{
+                display: flex;
+                justify-self: end;
+                margin-top: 1.5rem;
+                .comment-by-img{
+                    margin-right: .5rem;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: .5rem;
+                    }
+                }
+                .comment-by-text{
+                    p{
+                        font-size: .875rem;
+                        font-weight: 600;
+                        line-height: 1;
+                        margin-bottom: 0;
+                    }
+                    span{
+                        font-size: .875rem;
+                        color: var(--text-color-secondary);
+                    }
+                }
+            }
+            .upvote{
+                &>i{
+                    margin-left: 10px;
+                    vertical-align: sub;
+                    @include sm {
+                        margin-left: 0;
+                    }
+                }
+                .upvote-count{
+                    display: inline-block;
+                    vertical-align: sub;
+                    margin: 0 .5rem 1rem;
+                    @include sm {
+                        display: block;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+        }
+        .answer-count{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            h4 {
+                white-space: nowrap;
+                margin-bottom: 0;
+            }
+            select{
+                max-width: 200px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

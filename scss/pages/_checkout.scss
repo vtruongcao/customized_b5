@@ -1,0 +1,25 @@
+.appy-coupon{
+    button{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+.cart-products{
+    list-style-type: none;
+    li{
+        position: relative;
+        .price{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        p{
+            margin-bottom: .5rem;
+        }
+    }
+}
+.payment-info{
+    label{
+        font-size: .875rem;
+    }
+}

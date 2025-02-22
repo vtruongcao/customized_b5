@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 140px 0 60px 0;
+    min-height: 30vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        inset: 0;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+        font-family: var(--font-secondary);
+        @include sm {
+            font-size: 56px;
+        }
+    }
+    ol {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-primary);
+        a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: 0.3s;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        li+li {
+            padding-left: 10px;
+            &::before {
+                display: inline-block;
+                padding-right: 10px;
+                color: #fff;
+                content: "/";
+            }
+        }
+    }
+}

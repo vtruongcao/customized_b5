@@ -1,0 +1,121 @@
+/*--------------------------------------------------------------
+# Ticket Details
+--------------------------------------------------------------*/
+body.member-page{
+    .ticket-topic {
+        .ticket-topic-item {
+            .author {
+                margin-bottom: 2rem;
+                .avatar {
+                    max-width:  60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: .5rem;
+                    margin-bottom: .5rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                .name {
+                    display: inline-block;
+                    vertical-align: middle;
+                    h5 {
+                        margin-bottom: 0;
+                    }
+                    i {
+                        font-size: .875rem;
+                    }
+                }
+                .order {
+                    float: right;
+                    margin-top: .5rem;
+                    margin-right: .5rem;
+                }
+            }
+            .title {
+
+                h2 {
+                    display: inline;
+                    margin-right: .75rem;
+                }
+                .resolved-mark {
+                    display: inline-block;
+                }
+            }
+            .content {
+                margin-top: 1rem;
+            }
+            .taxonomy {
+                margin-top: 3rem;
+            }
+        }
+        hr {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .leave-a-feedback {
+            margin-top: 3rem;
+
+            .sub-label {
+                font-style: italic;
+                font-size: .875rem;
+                margin-bottom: .5rem;
+            }
+        }
+        .threads-pagination {
+            margin-top: -1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            @include md {
+                flex-direction: row;
+            }
+            p {
+                font-size: .875rem;
+            }
+        }
+
+        .ticket-list {
+            .author-avatar {
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+            .resolved-mark {
+                font-size: .875rem;
+                display: inline-block;
+            }
+            .thread-item {
+                h5 {
+                    &>a{
+                        margin-right: .75rem;
+                    }
+                }
+            }
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            .open-close-topics {
+                padding-top: .5rem;
+                padding-left: 2rem;
+                padding-bottom: .5rem;
+                text-align: left;
+                a {
+                    color: var(--color-secondary);
+                    filter: opacity(.5);
+                    margin-right: 1rem;
+                    display: inline-block;
+                    &.active {
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+}

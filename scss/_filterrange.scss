@@ -1,0 +1,28 @@
+.filter-range-wrap{
+    #slider-round {
+        height: 10px;
+    
+        .noUi-connect {
+            background: var(--color-primary);
+        }
+    
+        .noUi-handle {
+            height: 18px;
+            width: 18px;
+            top: -5px;
+            right: -9px; /* half the width */
+            border-radius: 9px;
+            &::after, &::before {
+                display: none;
+            }
+        }
+    }
+    .min-max-prices{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        .form-control{
+            border-radius: 0;
+        }
+    }
+}

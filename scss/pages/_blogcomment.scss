@@ -1,0 +1,121 @@
+/*--------------------------------------------------------------
+# Blog Comments
+--------------------------------------------------------------*/
+.blog {
+    .comments {
+        background-color: $white;
+        padding: 10px;
+        @include sm {
+            padding: 0;
+        }
+
+        .comments-count {
+            font-weight: bold;
+        }
+
+        .comment {
+            margin-top: 30px;
+            position: relative;
+
+            .comment-img {
+                margin-right: 14px;
+                margin-bottom: .5rem;
+                @include sm {
+                    margin-bottom: inherit;
+                }
+
+                img {
+                    width: 60px;
+                }
+            }
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 2px;
+
+                a {
+                    font-weight: bold;
+                    color: var(--color-default);
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+
+                .reply {
+                    padding-left: 10px;
+                    color: var(--color-secondary);
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            time {
+                display: block;
+                font-size: 14px;
+                color: rgba(82, 86, 94, 0.8);
+                margin-bottom: 5px;
+            }
+
+            &.comment-reply {
+                padding-left: 40px;
+            }
+        }
+
+        .reply-form {
+            margin-top: 30px;
+            padding: 0;
+            box-shadow: none;
+
+            h4 {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            input {
+                border-radius: 4px;
+                padding: 10px 10px;
+                font-size: 14px;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: rgba(254, 185, 0, 0.8);
+                }
+            }
+
+            textarea {
+                border-radius: 4px;
+                padding: 10px 10px;
+                font-size: 14px;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: rgba(254, 185, 0, 0.8);
+                }
+            }
+
+            .form-group {
+                margin-bottom: 25px;
+            }
+
+            button[type="submit"] {
+                border-radius: 4px;
+                padding: 10px 20px;
+                border: 0;
+                background-color: var(--color-primary);
+
+                &:hover {
+                    color: var(--color-secondary);
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
