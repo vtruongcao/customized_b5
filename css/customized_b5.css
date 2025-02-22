@@ -4405,6 +4405,15 @@ iframe[id$=-nvframe] ~ .main-content .section-manual {
 iframe[id$=-nvframe] ~ .main-content .header-search-form .mobile-search-hide {
   top: 4rem;
 }
+iframe[id$=-nvframe] ~ .main-content .main-block .main-content .mobile-show-nav {
+  top: calc(var(--header-height) + var(--ggt-frame-height));
+}
+iframe[id$=-nvframe] ~ .main-content .main-block .main-content .content-navigation {
+  top: calc(var(--header-height) + var(--sub-header-height) + var(--ggt-frame-height));
+}
+iframe[id$=-nvframe] ~ .main-content .main-block .sidebar {
+  top: calc(var(--header-height) + var(--sub-header-height) + var(--ggt-frame-height));
+}
 
 html,
 body {
