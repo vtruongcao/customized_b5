@@ -329,16 +329,6 @@
   }
 }
 
-iframe[id$=-nvframe] {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  display: none !important;
-}
-
-body.manual-page {
-  margin-top: 0 !important;
-}
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -4151,7 +4141,7 @@ body.member-page .ticket-topic .filter-bar .open-close-topics a.active {
 }
 
 .manual-page .section-manual {
-  padding: 116px 0 0;
+  padding: calc(var(--header-height) + var(--sub-header-height)) 0 0;
 }
 @media (min-width: 992px) {
   .manual-page .section-manual {
@@ -4344,7 +4334,7 @@ body.member-page .ticket-topic .filter-bar .open-close-topics a.active {
   background-color: #fff;
   padding: 1rem 1.5rem;
   position: fixed;
-  top: 58px;
+  top: var(--header-height);
   z-index: 1060;
   display: flex;
   justify-content: space-between;
@@ -4398,6 +4388,16 @@ body.member-page .ticket-topic .filter-bar .open-close-topics a.active {
 }
 .mobile-search-active .mobile-show-nav {
   z-index: 99 !important;
+}
+
+iframe[id$=-nvframe] ~ .main-content .header.fixed-top {
+  position: sticky;
+  top: 57px; /* google iframe height */
+}
+@media (min-width: 992px) {
+  iframe[id$=-nvframe] ~ .main-content .section-manual {
+    padding-top: 0;
+  }
 }
 
 html,
