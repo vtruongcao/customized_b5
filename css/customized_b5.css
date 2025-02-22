@@ -4138,6 +4138,7 @@ body.member-page .ticket-topic .filter-bar .open-close-topics a.active {
 :root {
   --header-height: 57px;
   --sub-header-height: 57px;
+  --ggt-frame-height: 57px;
 }
 
 .manual-page .section-manual {
@@ -4394,9 +4395,28 @@ iframe[id$=-nvframe] ~ .main-content .header.fixed-top {
   position: sticky;
   top: 57px; /* google iframe height */
 }
+iframe[id$=-nvframe] ~ .main-content .section-manual {
+  padding: var(--ggt-frame-height) 0 0;
+}
 @media (min-width: 992px) {
   iframe[id$=-nvframe] ~ .main-content .section-manual {
     padding-top: 0;
+  }
+}
+iframe[id$=-nvframe] ~ .main-content .header-search-form .mobile-search-hide {
+  top: 4rem;
+}
+iframe[id$=-nvframe] ~ .main-content .main-block .sidebar {
+  top: calc(var(--header-height) + var(--sub-header-height) + var(--ggt-frame-height));
+}
+@media (min-width: 992px) {
+  iframe[id$=-nvframe] ~ .main-content .main-block .sidebar {
+    top: calc(var(--header-height) + var(--ggt-frame-height));
+  }
+}
+@media (min-width: 992px) {
+  iframe[id$=-nvframe] ~ .main-content .main-block .main-content .content-navigation {
+    top: calc(var(--header-height) + var(--ggt-frame-height));
   }
 }
 
